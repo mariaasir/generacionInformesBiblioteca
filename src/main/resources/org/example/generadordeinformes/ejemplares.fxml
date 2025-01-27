@@ -15,7 +15,7 @@
       <Pane prefHeight="557.0" prefWidth="399.0" style="-fx-background-color: 001427;">
          <children>
             <Rectangle fill="#540b0e" height="55.0" layoutX="-5.0" layoutY="-5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="406.0" />
-            <ComboBox fx:id="comboBox" layoutX="90.0" layoutY="194.0" prefWidth="220.0" promptText="Disponibles" style="-fx-background-color: #e6e6e6;" />
+            <ComboBox fx:id="comboBox" layoutX="90.0" layoutY="194.0" prefWidth="220.0" promptText="Seleccione una opción" style="-fx-background-color: #e6e6e6;" />
             <Button fx:id="button" layoutX="90.0" layoutY="328.0" mnemonicParsing="false" onMouseClicked="#generarInforme" prefHeight="25.0" prefWidth="214.0" style="-fx-background-radius: 12; -fx-background-color: #540b0e;" text="GENERAR INFORME" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="12.0" />
@@ -29,7 +29,7 @@
                <font>
                   <Font name="Segoe UI Bold" size="12.0" />
                </font></Button>
-            <Text layoutX="92.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONE EL TIPO DE EJEMPLAR PARA EL INFORME" textAlignment="CENTER" wrappingWidth="214.0000000000001">
+            <Text layoutX="91.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONE EL TIPO DE EJEMPLAR PARA EL INFORME" textAlignment="CENTER" wrappingWidth="214.0000000000001">
                <font>
                   <Font name="Segoe UI" size="13.0" />
                </font>

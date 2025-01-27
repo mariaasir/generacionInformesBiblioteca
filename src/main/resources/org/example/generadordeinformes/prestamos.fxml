@@ -14,7 +14,7 @@
    <children>
       <Pane prefHeight="557.0" prefWidth="399.0">
          <children>
-            <ComboBox fx:id="comboBox" layoutX="94.0" layoutY="202.0" prefWidth="220.0" promptText="Devueltos" style="-fx-background-color: #e6e6e6;" />
+            <ComboBox fx:id="comboBox" layoutX="94.0" layoutY="202.0" prefWidth="220.0" promptText="Seleccione una opción" style="-fx-background-color: #e6e6e6;" />
             <Button fx:id="button" layoutX="90.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#generarInforme" prefHeight="25.0" prefWidth="214.0" style="-fx-background-color: #540b0e; -fx-background-radius: 12;" text="GENERAR INFORME" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />

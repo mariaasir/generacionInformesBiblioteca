@@ -54,11 +54,19 @@ public class LibrosController {
             System.out.println(parametroAutor);
             JasperPrint print = JasperFillManager.fillReport("src/main/resources/Informes/Libros/Libros.jasper", parametroAutor, connection);
             JasperExportManager.exportReportToPdfFile(print, "src/main/resources/Informes/InformeLibros.pdf");
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Informe Generado");
-            alert.setHeaderText(null);
-            alert.setContentText("El informe se ha generado correctamente.");
-            alert.showAndWait();
+            if (comboBox.getValue() == null){
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Complete los campos");
+                alert.setHeaderText(null);
+                alert.setContentText("Debe completar los campos para poder generar el informe");
+                alert.showAndWait();
+            } else if (comboBox.getValue() != null){
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Informe Generado");
+                alert.setHeaderText(null);
+                alert.setContentText("El informe se ha generado correctamente.");
+                alert.showAndWait();
+            }
         }
         catch (Throwable e){
             e.printStackTrace();
