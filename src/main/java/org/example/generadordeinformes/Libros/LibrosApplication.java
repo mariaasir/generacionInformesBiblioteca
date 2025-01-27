@@ -10,7 +10,7 @@ public class LibrosApplication extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(PrestamosApplication.class.getResource("libros.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 342, 489);
+        Scene scene = new Scene(fxmlLoader.load(), 399, 557);
         stage.setTitle("Libros");
         stage.setScene(scene);
         stage.show();

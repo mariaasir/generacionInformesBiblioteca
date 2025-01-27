@@ -37,11 +37,13 @@ public class UsuariosController {
     private ToggleGroup penalizado;
 
     String penalizacion;
+    Tooltip informacion = new Tooltip("Seleccione si desea filtrar los usuarios Normales o Administradores. \n Además, debe seleccionar si están penalizados o no.");
 
 
     @FXML
     public void initialize() {
         comboBox.getItems().addAll("Normal", "Administrador");
+        this.comboBox.setTooltip(informacion);
 
     }
 

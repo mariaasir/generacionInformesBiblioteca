@@ -2,35 +2,44 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="452.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.generadordeinformes.Libros.LibrosController">
+<AnchorPane prefHeight="557.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.generadordeinformes.Libros.LibrosController">
    <children>
-      <Pane prefHeight="452.0" prefWidth="342.0">
+      <Pane prefHeight="557.0" prefWidth="399.0">
          <children>
-            <ComboBox fx:id="comboBox" layoutX="80.0" layoutY="201.0" prefHeight="25.0" prefWidth="180.0" promptText="Suzanne Collins" style="-fx-background-color: #e6e6e6;" />
-            <Button fx:id="button" layoutX="64.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#generarInforme" prefHeight="25.0" prefWidth="214.0" style="-fx-background-radius: 30; -fx-background-color: #540b0e;" text="GENERAR INFORME" textAlignment="CENTER" textFill="WHITE">
+            <ComboBox fx:id="comboBox" layoutX="87.0" layoutY="217.0" prefHeight="25.0" prefWidth="220.0" promptText="Suzanne Collins" style="-fx-background-color: #e6e6e6;" />
+            <Button fx:id="button" layoutX="90.0" layoutY="344.0" mnemonicParsing="false" onMouseClicked="#generarInforme" prefHeight="25.0" prefWidth="214.0" style="-fx-background-radius: 30; -fx-background-color: #540b0e;" text="GENERAR INFORME" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Text fill="#540b0e" layoutX="88.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LIBROS" textAlignment="CENTER" wrappingWidth="164.8050079345703">
+            <Button fx:id="button1" layoutX="90.0" layoutY="388.0" mnemonicParsing="false" onMouseClicked="#visualizarInforme" prefHeight="25.0" prefWidth="214.0" style="-fx-background-radius: 15; -fx-background-color: #540b0e;" text="VISUALIZAR INFORME" textAlignment="CENTER" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="46.0" />
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Text layoutX="93.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONE EL NOMBRE DEL AUTOR PARA EL INFORME" textAlignment="CENTER" wrappingWidth="214.0">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
                </font>
             </Text>
-            <Button fx:id="button1" layoutX="64.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#visualizarInforme" prefHeight="25.0" prefWidth="214.0" style="-fx-background-radius: 15; -fx-background-color: #540b0e;" text="VISUALIZAR INFORME" textAlignment="CENTER" textFill="WHITE">
+            <Rectangle fill="#540b0e" height="55.0" layoutX="-5.0" layoutY="-5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="406.0" />
+            <Text fill="WHITE" layoutX="305.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LIBROS" wrappingWidth="70.199951171875">
                <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Button>
-            <Text layoutX="92.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONE EL NOMBRE DEL AUTOR PARA EL INFORME" textAlignment="CENTER" wrappingWidth="154.7458953857422">
-               <font>
-                  <Font name="Segoe UI" size="10.0" />
+                  <Font name="Segoe UI Bold" size="19.0" />
                </font>
             </Text>
          </children>
       </Pane>
+      <ImageView fitHeight="44.0" fitWidth="57.0" layoutX="5.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/logo2.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

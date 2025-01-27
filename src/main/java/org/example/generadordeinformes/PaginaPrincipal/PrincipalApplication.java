@@ -11,7 +11,7 @@ public class PrincipalApplication extends Application {
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(PrincipalApplication.class.getResource("/org/example/generadordeinformes/paginaPrincipal.fxml"));
 
-        Scene scene = new Scene(fxmlLoader.load(), 342, 489);
+        Scene scene = new Scene(fxmlLoader.load(), 399, 557);
         stage.setTitle("Biblioteca");
         stage.setScene(scene);
         stage.show();

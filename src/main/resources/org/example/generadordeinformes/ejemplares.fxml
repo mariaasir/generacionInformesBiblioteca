@@ -2,34 +2,43 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="452.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.generadordeinformes.Ejemplares.EjemplaresController">
+<AnchorPane prefHeight="557.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.generadordeinformes.Ejemplares.EjemplaresController">
    <children>
-      <Pane prefHeight="452.0" prefWidth="342.0" style="-fx-background-color: 001427;">
+      <Pane prefHeight="557.0" prefWidth="399.0" style="-fx-background-color: 001427;">
          <children>
-            <ComboBox fx:id="comboBox" layoutX="108.0" layoutY="201.0" prefHeight="25.0" prefWidth="127.0" promptText="Disponibles" style="-fx-background-radius: 12; -fx-background-color: #e6e6e6;" />
-            <Button fx:id="button" layoutX="64.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#generarInforme" prefHeight="25.0" prefWidth="214.0" style="-fx-background-radius: 12; -fx-background-color: #540b0e;" text="GENERAR INFORME" textFill="WHITE">
+            <Rectangle fill="#540b0e" height="55.0" layoutX="-5.0" layoutY="-5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="406.0" />
+            <ComboBox fx:id="comboBox" layoutX="90.0" layoutY="194.0" prefWidth="220.0" promptText="Disponibles" style="-fx-background-color: #e6e6e6;" />
+            <Button fx:id="button" layoutX="90.0" layoutY="328.0" mnemonicParsing="false" onMouseClicked="#generarInforme" prefHeight="25.0" prefWidth="214.0" style="-fx-background-radius: 12; -fx-background-color: #540b0e;" text="GENERAR INFORME" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="12.0" />
                </font></Button>
-            <Text fill="#540b0e" layoutX="30.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EJEMPLARES" wrappingWidth="282.4050598144531">
+            <Text fill="WHITE" layoutX="274.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EJEMPLARES" wrappingWidth="118.199951171875">
                <font>
-                  <Font name="Segoe UI Bold" size="46.0" />
+                  <Font name="Segoe UI Bold" size="19.0" />
                </font>
             </Text>
-            <Button fx:id="button1" layoutX="64.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#visualizarInforme" prefHeight="25.0" prefWidth="214.0" style="-fx-background-radius: 12; -fx-background-color: #540b0e;" text="VISUALIZAR INFORME" textFill="WHITE">
+            <Button fx:id="button1" layoutX="90.0" layoutY="372.0" mnemonicParsing="false" onMouseClicked="#visualizarInforme" prefHeight="25.0" prefWidth="214.0" style="-fx-background-radius: 12; -fx-background-color: #540b0e;" text="VISUALIZAR INFORME" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="12.0" />
                </font></Button>
-            <Text layoutX="94.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONE EL TIPO DE EJEMPLAR PARA EL INFORME" textAlignment="CENTER" wrappingWidth="154.7458953857422">
+            <Text layoutX="92.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONE EL TIPO DE EJEMPLAR PARA EL INFORME" textAlignment="CENTER" wrappingWidth="214.0000000000001">
                <font>
-                  <Font name="Segoe UI" size="10.0" />
+                  <Font name="Segoe UI" size="13.0" />
                </font>
             </Text>
+            <ImageView fitHeight="44.0" fitWidth="57.0" layoutX="5.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/logo2.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>

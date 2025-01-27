@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Tooltip;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import net.sf.jasperreports.engine.JasperExportManager;
@@ -29,6 +30,8 @@ public class LibrosController {
 
     @FXML
     private Button button;
+    Tooltip informacion = new Tooltip("Los libros se filtrarán por el nombre del autor para realizar el informe.\n Seleccione el autor por el que desea filtrar.");
+
 
     @FXML
     public void initialize() {
@@ -36,6 +39,7 @@ public class LibrosController {
                 "Suzanne Collins", "Stieg Larsson", "Stephen King", "Paulo Coelho",
                 "Miguel de Cervantes", "Leopoldo Alas", "J.R.R. Tolkien", "J.K. Rowling",
                 "Ian McEwan", "Homer", "George R.R. Martin", "George Orwell");
+        this.comboBox.setTooltip(informacion);
     }
 
     public void generarInforme() {

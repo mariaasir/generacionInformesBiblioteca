@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Tooltip;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import net.sf.jasperreports.engine.JasperExportManager;
@@ -24,16 +25,17 @@ import java.sql.DriverManager;
 import java.util.HashMap;
 import java.util.Map;
 
-public class EjemplaresController {
-    @FXML
+public class EjemplaresController {    @FXML
     private ComboBox<String> comboBox;
 
     @FXML
     private Button button;
+    Tooltip informacion = new Tooltip("Seleccione si desea filtraer los ejemplares disponibles,\n los que han sido prestados ( y aún no han sido devueltos) , o los ejemplares dañados");
 
     @FXML
     public void initialize() {
         comboBox.getItems().addAll("Disponible", "Prestado", "Dañado");
+        this.comboBox.setTooltip(informacion);
     }
 
     public void generarInforme() {

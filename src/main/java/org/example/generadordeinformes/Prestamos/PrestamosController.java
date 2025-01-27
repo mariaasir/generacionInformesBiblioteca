@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Tooltip;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import net.sf.jasperreports.engine.JasperExportManager;
@@ -29,10 +30,12 @@ public class PrestamosController {
 
     @FXML
     private Button button;
+    Tooltip informacion = new Tooltip("Seleccione si desea filtrar los Prestamos devvueltos o los que no han sido devueltos aún.");
 
     @FXML
     public void initialize() {
         comboBox.getItems().addAll("Devueltos", "No Devueltos");
+        this.comboBox.setTooltip(informacion);
     }
 
     public void generarInforme() {

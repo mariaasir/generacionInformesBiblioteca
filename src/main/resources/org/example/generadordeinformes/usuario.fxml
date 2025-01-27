@@ -4,40 +4,55 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="452.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.generadordeinformes.Usuarios.UsuariosController">
+<AnchorPane prefHeight="557.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.generadordeinformes.Usuarios.UsuariosController">
    <children>
-      <Pane prefHeight="452.0" prefWidth="342.0">
+      <Pane prefHeight="557.0" prefWidth="399.0">
          <children>
-            <ComboBox fx:id="comboBox" layoutX="95.0" layoutY="199.0" prefWidth="150.0" promptText="Normal" style="-fx-background-color: #e6e6e6;" />
-            <Button fx:id="button" layoutX="63.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#generarInforme" prefHeight="25.0" prefWidth="214.0" style="-fx-background-color: #540b0e; -fx-background-radius: 12;" text="GENERAR INFORME" textFill="WHITE">
+            <ComboBox fx:id="comboBox" layoutX="90.0" layoutY="177.0" prefWidth="220.0" promptText="Normal" style="-fx-background-color: #e6e6e6;" />
+            <Button fx:id="button" layoutX="90.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#generarInforme" prefHeight="25.0" prefWidth="214.0" style="-fx-background-color: #540b0e; -fx-background-radius: 12;" text="GENERAR INFORME" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Text fill="#540b0e" layoutX="64.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USUARIO" wrappingWidth="211.7177734375">
-               <font>
-                  <Font name="Segoe UI Bold" size="46.0" />
-               </font>
-            </Text>
-            <RadioButton fx:id="si" layoutX="118.0" layoutY="235.0" mnemonicParsing="false" text="Si">
+            <RadioButton fx:id="si" layoutX="126.0" layoutY="233.0" mnemonicParsing="false" prefWidth="51.0" text="Si">
                <toggleGroup>
                   <ToggleGroup fx:id="penalizado" />
                </toggleGroup>
+               <font>
+                  <Font size="16.0" />
+               </font>
             </RadioButton>
-            <RadioButton fx:id="no" layoutX="184.0" layoutY="235.0" mnemonicParsing="false" text="No" toggleGroup="$penalizado" />
-            <Button fx:id="button1" layoutX="64.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#visualizarInforme" prefHeight="25.0" prefWidth="214.0" style="-fx-background-color: #540b0e; -fx-background-radius: 12;" text="VISUALIZAR INFORME" textFill="WHITE">
+            <RadioButton fx:id="no" layoutX="214.0" layoutY="233.0" mnemonicParsing="false" text="No" toggleGroup="$penalizado">
+               <font>
+                  <Font size="16.0" />
+               </font></RadioButton>
+            <Button fx:id="button1" layoutX="91.0" layoutY="403.0" mnemonicParsing="false" onMouseClicked="#visualizarInforme" prefHeight="25.0" prefWidth="214.0" style="-fx-background-color: #540b0e; -fx-background-radius: 12;" text="VISUALIZAR INFORME" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Text layoutX="47.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONE EL TIPO DE USUARIO Y SI DESEAS QUE TENGA PENALIZACIONES O NO" textAlignment="CENTER" wrappingWidth="248.67889404296875">
+            <Text layoutX="54.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONE EL TIPO DE USUARIO Y SI DESEAS QUE TENGA PENALIZACIONES O NO" textAlignment="CENTER" wrappingWidth="291.0789222717285">
                <font>
-                  <Font size="10.0" />
+                  <Font size="13.0" />
                </font>
             </Text>
+            <Rectangle fill="#540b0e" height="55.0" layoutX="-5.0" layoutY="-5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="406.0" />
+            <Text fill="WHITE" layoutX="287.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USUARIO" wrappingWidth="91.0">
+               <font>
+                  <Font name="Segoe UI Bold" size="19.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="44.0" fitWidth="57.0" layoutX="5.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/logo2.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>

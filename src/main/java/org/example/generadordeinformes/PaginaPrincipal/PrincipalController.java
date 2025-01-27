@@ -27,7 +27,17 @@ public class PrincipalController {
     private Button botonEjemplares;
     @FXML
     private Button botonPrestamos;
+    Tooltip tooltipLibros= new Tooltip("Generar informe de libros");
+    Tooltip tooltipUsuarios = new Tooltip("Generar informe de usuarios");
+    Tooltip tooltipEjemplares = new Tooltip("Generar informe de ejemplares");
+    Tooltip tooltipPrestamos = new Tooltip("Generar informe de prestamos");
 
+    public void initialize(){
+        this.botonLibros.setTooltip(tooltipLibros);
+        this.botonUsuarios.setTooltip(tooltipUsuarios);
+        this.botonEjemplares.setTooltip(tooltipEjemplares);
+        this.botonPrestamos.setTooltip(tooltipPrestamos);
+    }
     @FXML
     public void ventanaUsuario() {
         try {
