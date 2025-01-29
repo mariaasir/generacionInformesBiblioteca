@@ -13,8 +13,6 @@ import javafx.stage.Stage;
 import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
-import org.example.generadordeinformes.PaginaPrincipal.PrincipalController;
-import org.example.generadordeinformes.Usuarios.UsuariosController;
 
 import java.awt.*;
 import java.io.File;

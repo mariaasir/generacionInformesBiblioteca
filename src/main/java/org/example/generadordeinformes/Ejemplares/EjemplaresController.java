@@ -1,6 +1,5 @@
 package org.example.generadordeinformes.Ejemplares;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,8 +13,6 @@ import javafx.stage.Stage;
 import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
-import org.example.generadordeinformes.PaginaPrincipal.PrincipalController;
-import org.example.generadordeinformes.Usuarios.UsuariosController;
 
 import java.awt.*;
 import java.io.File;
@@ -72,7 +69,7 @@ public class EjemplaresController {    @FXML
     @FXML
     public void volver() {
         try {
-            FXMLLoader cargaLI = new FXMLLoader(getClass().getResource("/org/example/generadordeinformes/paginaPrincipal.fxml"));
+            FXMLLoader cargaLI = new FXMLLoader(getClass().getResource("org/example/generadordeinformes/paginaPrincipal.fxml"));
             Parent root = cargaLI.load();
 
             // Aquí obtienes la ventana principal

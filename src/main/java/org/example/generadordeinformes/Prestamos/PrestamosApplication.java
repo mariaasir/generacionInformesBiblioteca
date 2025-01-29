@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 public class PrestamosApplication extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(PrestamosApplication.class.getResource("/org/example/generadordeinformes/prestamos.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(PrestamosApplication.class.getResource("org/example/generadordeinformes/prestamos.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 399, 557);
         stage.setTitle("Préstamos");
         stage.setScene(scene);

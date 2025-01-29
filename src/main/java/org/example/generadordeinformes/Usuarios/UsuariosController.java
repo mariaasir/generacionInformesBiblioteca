@@ -1,19 +1,15 @@
 package org.example.generadordeinformes.Usuarios;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
-import org.example.generadordeinformes.PaginaPrincipal.PrincipalController;
 
 import java.awt.*;
 import java.io.File;
@@ -22,7 +18,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
 public class UsuariosController {
     @FXML
@@ -88,7 +83,7 @@ public class UsuariosController {
     @FXML
     public void volver() {
         try {
-            FXMLLoader cargaLI = new FXMLLoader(getClass().getResource("/org/example/generadordeinformes/paginaPrincipal.fxml"));
+            FXMLLoader cargaLI = new FXMLLoader(getClass().getResource("/org/example/org.example.generadordeinformes/paginaPrincipal.fxml"));
             Parent root = cargaLI.load();
 
             // Aquí obtienes la ventana principal
