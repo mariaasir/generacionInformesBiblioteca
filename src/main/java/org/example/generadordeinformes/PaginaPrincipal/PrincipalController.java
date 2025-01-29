@@ -67,7 +67,7 @@ public class PrincipalController {
     }
 
     /**
-     * Abre la ventana de gestión de usuarios cargando el archivo {@code usuario.fxml}.
+     * Abre la ventana de gestión de usuarios cargando el archivo usuario.fxml.
      * Cierra la ventana principal mientras la nueva ventana está activa.
      */
     @FXML

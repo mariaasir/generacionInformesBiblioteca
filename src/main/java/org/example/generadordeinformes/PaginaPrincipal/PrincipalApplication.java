@@ -11,7 +11,7 @@ import javafx.stage.Stage;
  *
  * <p> La aplicación representa una interfaz para la gestión de una biblioteca.
  *  La interfaz está definida en el archivo FXML ubicado en el paquete
- * {@code /org/example/org.example.generadordeinformes/paginaPrincipal.fxml}.
+ * {/org/example/generadordeinformes/paginaPrincipal.fxml.
  * </p>
  *
  * <h2>Uso principal:</h2>
