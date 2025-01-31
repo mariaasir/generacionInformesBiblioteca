@@ -84,16 +84,18 @@
 
         .packages-list li {
             margin: 5px 0;
+
         }
 
-        .packages-list a {
-            text-decoration: none;
-            color: #007bff;
+        .packages-list li a {
+            font-size: 12px;
+            color: darkgrey;
+            text-decoration: none; /* Elimina el subrayado */
+            color: inherit;
         }
 
-        .packages-list a:hover {
-            text-decoration: underline;
-        }
+
+
 
         .exports {
             font-size: 20px;
@@ -101,6 +103,7 @@
             margin-right: 95%;
             font-style: oblique;
         }
+
     </style>
 </head>
 <body>
@@ -113,14 +116,14 @@
 <div class="package">
     <h2>Package</h2>
     <p class="exports">Exports</p>
-    <p><span style="display: inline-block; margin-right: 250px;">Packages</span>Description</p>
+    <p><span style="display: inline-block; margin-right: 400px;">Packages</span>Description</p>
 
     <ul class="packages-list">
-        <li><span style="display: inline-block; margin-right: 250px;">generadordeinformes.Ejemplares</span>La carpeta Ejemplares se encarga de inicializar y mostrar la interfaz gráfica para la gestión de Ejemplares y permitirá crear informes según su estado.</li>
-        <li><span style="display: inline-block; margin-right: 250px;">generadordeinformes.Libros</span>La carpeta Libros se encarga de inicializar y mostrar la interfaz gráfica para la gestión de Libros  y permitirá crear informes agrupando por escritores.</li>
-        <li><span style="display: inline-block; margin-right: 250px;">generadordeinformes.Página principal</span>La carpeta PáginaPrincipal inicializa es la entrada principal para la aplicación JavaFX.</li>
-        <li><span style="display: inline-block; margin-right: 250px;">generadordeinformes.Prestamos</span>La carpeta Prestamos se encarga de inicializar y mostrar la interfaz gráfica para la gestión de prestamos  y permitirá crear informes agrupando por los devueltos o los no devueltos.</li>
-        <li><span style="display: inline-block; margin-right: 250px;">generadordeinformes.Usuarios</span>La carpeta Usuarios se encarga de inicializar y mostrar la interfaz gráfica para la gestión de usuarios  y permitirá crear informes indicando el tipo de usuario y si está penalizado o no.</li>
+        <li><span style="display: inline-block; margin-right: 233px;">generadordeinformes.Ejemplares</span><a class="description">La carpeta Ejemplares se encarga de inicializar y mostrar la interfaz gráfica para la gestión de Ejemplares y permitirá crear informes según su estado.</a></li>
+        <li><span style="display: inline-block; margin-right: 270px;">generadordeinformes.Libros</span><a class="description">La carpeta Libros se encarga de inicializar y mostrar la interfaz gráfica para la gestión de Libros  y permitirá crear informes agrupando por escritores.</a></li>
+        <li><span style="display: inline-block; margin-right: 200px;">generadordeinformes.Página principal</span><a class="description">La carpeta PáginaPrincipal inicializa es la entrada principal para la aplicación JavaFX.</a></li>
+        <li><span style="display: inline-block; margin-right: 237px;">generadordeinformes.Prestamos</span><a class="description">La carpeta Prestamos se encarga de inicializar y mostrar la interfaz gráfica para la gestión de prestamos  y permitirá crear informes agrupando por los devueltos o los no devueltos.</a></li>
+        <li><span style="display: inline-block; margin-right: 250px;">generadordeinformes.Usuarios</span><a class="description">La carpeta Usuarios se encarga de inicializar y mostrar la interfaz gráfica para la gestión de usuarios  y permitirá crear informes indicando el tipo de usuario y si está penalizado o no.</a></li>
     </ul>
 </div>
 
