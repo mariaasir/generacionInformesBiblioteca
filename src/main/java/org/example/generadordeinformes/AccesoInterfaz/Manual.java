@@ -30,7 +30,7 @@ public class Manual {
         // Construcción de la URI
         URI myUri = null;
         try {
-            myUri = new URI("https://miSitioWeb.com");
+            myUri = new URI("https://mariaasir.github.io/generacionInformesBiblioteca/");
         } catch (Exception ex) {
             ex.printStackTrace();
             JOptionPane.showMessageDialog(frame, "La URL especificada es inválida.", "Error",

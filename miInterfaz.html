@@ -10,88 +10,126 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #540b0e;
+            color: #e6e6e6;
         }
+
         header {
-            background-color: #4CAF50;
+            background-color: #540b0e;
             color: white;
             padding: 1rem;
             text-align: center;
         }
+
         .container {
             padding: 2rem;
         }
+
         h1, h2, h3 {
-            color: #4CAF50;
+            color: white;
         }
+
         ul {
             padding-left: 1.5rem;
         }
+
         footer {
-            background-color: #4CAF50;
+            background-color: #540b0e;
             color: white;
             text-align: center;
-            padding: 1rem 0;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
+
         a {
-            color: #4CAF50;
+            color: #540b0e;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module: generadordeinformes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #540b0e;
+        }
+
+        .package {
+            background-color: #540b0e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .packages-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .packages-list li {
+            margin: 5px 0;
+        }
+
+        .packages-list a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .packages-list a:hover {
+            text-decoration: underline;
+        }
+
+        .exports {
+            font-size: 20px;
+            background-color: #300608;
+            margin-right: 95%;
+            font-style: oblique;
+        }
+    </style>
+</head>
 <body>
-<header>
-    <h1>Manual de Ayuda de la Interfaz</h1>
-</header>
-<div class="container">
-    <section>
-        <h2>Introducción</h2>
-        <p>Bienvenido al manual de ayuda de la interfaz. Aquí encontrarás información útil para navegar y utilizar todas las funcionalidades disponibles.</p>
-    </section>
 
-    <section>
-        <h2>Navegación Principal</h2>
-        <ul>
-            <li><strong>Inicio:</strong> Accede a la página principal donde puedes ver un resumen de tus actividades.</li>
-            <li><strong>Configuración:</strong> Personaliza tus preferencias y ajusta las opciones de la interfaz.</li>
-            <li><strong>Ayuda:</strong> Encuentra este manual y más recursos útiles.</li>
-        </ul>
-    </section>
+<h1>Module: generadordeinformes</h1>
 
-    <section>
-        <h2>Funciones Clave</h2>
-        <h3>Búsqueda</h3>
-        <p>Utiliza la barra de búsqueda en la parte superior para encontrar rápidamente lo que necesitas.</p>
 
-        <h3>Notificaciones</h3>
-        <p>Las notificaciones aparecen en la esquina superior derecha. Haz clic en el icono para ver más detalles.</p>
 
-        <h3>Atajos de Teclado</h3>
-        <ul>
-            <li><strong>Ctrl + S:</strong> Guardar cambios.</li>
-            <li><strong>Ctrl + F:</strong> Buscar dentro de la página.</li>
-            <li><strong>Ctrl + H:</strong> Acceder a este manual de ayuda.</li>
-        </ul>
-    </section>
 
-    <section>
-        <h2>Preguntas Frecuentes (FAQ)</h2>
-        <h3>¿Cómo puedo restablecer mi contraseña?</h3>
-        <p>Ve a la sección de configuración, selecciona "Cuenta" y haz clic en "Restablecer contraseña".</p>
+<div class="package">
+    <h2>Package</h2>
+    <p class="exports">Exports</p>
+    <p><span style="display: inline-block; margin-right: 250px;">Packages</span>Description</p>
 
-        <h3>¿Dónde puedo obtener más ayuda?</h3>
-        <p>Si necesitas asistencia adicional, contáctanos a través de nuestro <a href="mailto:soporte@ejemplo.com">correo de soporte</a>.</p>
-    </section>
+    <ul class="packages-list">
+        <li><span style="display: inline-block; margin-right: 250px;">generadordeinformes.Ejemplares</span>La carpeta Ejemplares se encarga de inicializar y mostrar la interfaz gráfica para la gestión de Ejemplares y permitirá crear informes según su estado.</li>
+        <li><span style="display: inline-block; margin-right: 250px;">generadordeinformes.Libros</span>La carpeta Libros se encarga de inicializar y mostrar la interfaz gráfica para la gestión de Libros  y permitirá crear informes agrupando por escritores.</li>
+        <li><span style="display: inline-block; margin-right: 250px;">generadordeinformes.Página principal</span>La carpeta PáginaPrincipal inicializa es la entrada principal para la aplicación JavaFX.</li>
+        <li><span style="display: inline-block; margin-right: 250px;">generadordeinformes.Prestamos</span>La carpeta Prestamos se encarga de inicializar y mostrar la interfaz gráfica para la gestión de prestamos  y permitirá crear informes agrupando por los devueltos o los no devueltos.</li>
+        <li><span style="display: inline-block; margin-right: 250px;">generadordeinformes.Usuarios</span>La carpeta Usuarios se encarga de inicializar y mostrar la interfaz gráfica para la gestión de usuarios  y permitirá crear informes indicando el tipo de usuario y si está penalizado o no.</li>
+    </ul>
 </div>
+
+
+</body>
+</html>
+
 <footer>
-    <p>© 2025 Nombre de tu Compañía. Todos los derechos reservados.</p>
+    <p>© 2025 Biblioteca María López. Todos los derechos reservados.</p>
 </footer>
 </body>
 </html>
