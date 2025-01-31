@@ -32,6 +32,7 @@
                   <Image url="@../../../Images/logo.png" />
                </image>
             </ImageView>
+            <Button fx:id="botonAyuda" layoutX="335.0" layoutY="511.0" mnemonicParsing="false" onMouseClicked="#ventanaAyuda" style="-fx-background-color: transparent;" text="Ayuda" textFill="#540b0e" />
          </children>
       </Pane>
    </children>

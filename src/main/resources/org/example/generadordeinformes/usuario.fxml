@@ -60,5 +60,6 @@
             </Text>
          </children>
       </Pane>
+      <Button fx:id="botonAyuda" layoutX="345.0" layoutY="521.0" mnemonicParsing="false" onMouseClicked="#ventanaAyuda" style="-fx-background-color: transparent;" text="Ayuda" textFill="#540b0e" />
    </children>
 </AnchorPane>

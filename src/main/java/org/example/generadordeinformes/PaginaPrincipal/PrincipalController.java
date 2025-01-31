@@ -49,6 +49,8 @@ public class PrincipalController {
     private Button botonEjemplares;
     @FXML
     private Button botonPrestamos;
+    @FXML
+    private Button botonAyuda;
 
     Tooltip tooltipLibros = new Tooltip("Generar informe de libros");
     Tooltip tooltipUsuarios = new Tooltip("Generar informe de usuarios");
@@ -155,4 +157,25 @@ public class PrincipalController {
             throw new RuntimeException("Error al cargar la ventana de préstamos: " + e.getMessage(), e);
         }
     }
+
+
+    @FXML
+    public void ventanaAyuda() {
+        try {
+            // Ruta al archivo .java compilado o al .jar que deseas ejecutar
+            String rutaJava = "src/main/java/org/example/generadordeinformes/AccesoInterfaz/Manual.java";  // Puedes reemplazar esto con el archivo compilado .class si es necesario
+
+            // Comando para ejecutar el archivo Java
+            ProcessBuilder builder = new ProcessBuilder("java", rutaJava); // Esto asume que tienes el archivo .class o .jar y puedes usar "java" para ejecutarlo
+            builder.inheritIO();  // Esto permite que la salida de la consola se vea en tu terminal
+            Process proceso = builder.start();  // Inicia el proceso
+
+            // Espera a que termine el proceso (si es necesario)
+            proceso.waitFor();
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+            throw new RuntimeException("Error al ejecutar el archivo Java: " + e.getMessage(), e);
+        }
+    }
+
 }
